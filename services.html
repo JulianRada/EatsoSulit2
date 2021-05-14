@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eats So Sulit</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/navbar-scroll.js"></script>
+    <script type="text/javascript" src="js/arrow-down.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default -transparent">
+        <div class="content">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false">
+                    MENU
+                    <span class="arrow-menu" onclick="this.classList.toggle('move')"></span>
+                </button>
+                <a href="index.html">
+                    <img src="images/logo/logo.png" class="logo">
+                </a>
+                <a href="index.html">
+                    <img src="images/logo/logo-white.png" class="show-logo">
+                </a>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle link -drop" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            Menus
+                            <div class="arrow-down"></div>
+                        </a>
+                        <ul class="dropdown-menu -border-bottom">
+                            <li class="item"><a href="">Beef</a></li>
+                            <li class="item"><a href="">Chicken</a></li>
+                            <li class="item"><a href="">Pork</a></li>
+                            <li class="item"><a href="">Vegetables</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="services.html" class="link -active">Products and Services</a></li>    
+                    <li><a href="gallery.html" class="link">Gallery</a></li>
+                    <li><a href="reviews.html" class="link">Reviews</a></li>
+                    
+                     <li><a href="contact.html" class="link">Contact Us</a></li>
+
+                    <li><a href="order.html" class="link" target="_blank"><button class="btn btn-yellow">Order Now!</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <section class="blue-section">
+        <h1>Check out the different Foods Available</h1>
+    </section>
+
+    <ul class="plans">
+        <li class="plan highlight">
+            <span class="price price-green">₱747.000</span>
+            
+            <div class="details">
+                <h1 class="plan-title">Beef</h1>
+                <p class="plan-description">Burger Steak</p>
+            </div>
+            
+            <button class="btn select">Buy Now</button>
+        </li>
+        
+        <li class="plan">
+            <span class="price price-red">₱800.00</span>
+            
+            <div class="details">
+                <h1 class="plan-title">Pork </h1>
+                <p class="plan-description">Asado</p>
+            </div>
+            
+            <button class="btn select">Buy Now</button>
+        </li>
+
+         <li class="plan">
+            <span class="price price-red">₱650.00</span>
+            
+            <div class="details">
+                <h1 class="plan-title">Beef</h1>
+                <p class="plan-description">Salpicao</p>
+            </div>
+            
+            <button class="btn select">Buy Now</button>
+        </li>
+
+        <li class="plan">
+            <span class="price price-red">₱624.00</span>
+            
+            <div class="details">
+                <h1 class="plan-title">Vegetables </h1>
+                <p class="plan-description">Special Laing</p>
+            </div>
+            
+            <button class="btn select">Buy Now</button>
+        </li>
+
+         <li class="plan">
+            <span class="price price-red">₱624.00</span>
+            
+            <div class="details">
+                <h1 class="plan-title">Vegetables </h1>
+                <p class="plan-description">Special Laing</p>
+            </div>
+            
+            <button class="btn select">Buy Now</button>
+        </li>
+
+    </ul>
+    
+</div>
+
+     <footer>
+        <div class="footer-container">
+            <div class="left">
+                <img src="images/logo/logo-center-white.png" />
+            </div>
+            <div class="right-content">
+                <div class="column">
+                    <p class="title">Categories</p>
+                    <div class="subs">Beef</div>
+                    <div class="subs">Pork</div>
+                    <div class="subs">Chicken</div>
+                    <div class="subs">Vegetables</div>
+                </div>
+                <div class="column">
+                    <p class="title">Products</p>
+                    <div class="subs">Special</div>
+                    <div class="subs">Drinks</div>
+                </div>
+                <div class="column">
+                    <p class="title">About</p>
+                    <div class="subs">Contact</div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">Copyright © 2021 EatSoSulit</p>
+    </footer>
+</body>
+</html>

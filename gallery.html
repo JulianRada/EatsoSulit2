@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eats So Sulit</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/navbar-scroll.js"></script>
+    <script type="text/javascript" src="js/arrow-down.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default -transparent">
+        <div class="content">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false">
+                    MENU
+                    <span class="arrow-menu" onclick="this.classList.toggle('move')"></span>
+                </button>
+                <a href="index.html">
+                    <img src="images/logo/logo.png" class="logo">
+                </a>
+                <a href="index.html">
+                    <img src="images/logo/logo-white.png" class="show-logo">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle link -drop" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            Menus
+                            <div class="arrow-down"></div>
+                        </a>
+                        <ul class="dropdown-menu -border-bottom">
+                            <li class="item"><a href="">Beef</a></li>
+                            <li class="item"><a href="">Chicken</a></li>
+                            <li class="item"><a href="">Pork</a></li>
+                            <li class="item"><a href="">Vegetables</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="services.html" class="link">Products and Services</a></li>
+                    <li><a href="gallery.html" class="link -active">Gallery</a></li>
+                    <li><a href="reviews.html" class="link">Reviews</a></li>
+                    <li><a href="contact.html" class="link">Contact Us</a></li>
+                    <li><button class="btn btn-yellow"><a href="order.html" class="link -tablet">Order Now!</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header-container">
+        <img src="images/galler-banner.jpg" />
+        <div class="title"><h1>Our Gallery</h1></div> 
+    </div>
+
+    <section class="page-container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a data-toggle="tab" href="#all">All Menu</a></li>
+            <li><a data-toggle="tab" href="#beef">Beef</a></li>
+            <li><a data-toggle="tab" href="#pork">Pork</a></li>
+            <li><a data-toggle="tab" href="#chicken">Chicken</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="all" class="tab-pane fade in active">
+                <div class="menu-content">
+                    <div class="image">
+                        <img class="image" src="images/products/roasted-beef-potato.png" />
+                        <p class="title">Roased Beef with Mashed Potato</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/pork-asado.png" />
+                        <p class="title">Pork Asado</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/chicken-barbecue.png" />
+                        <p class="title">Chicken Barbecue</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/sweet-sour-pork.png" />
+                        <p class="title">Sweet and Sour Pork</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/burder-steak.png" />
+                        <p class="title">Burder Steak</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/lemon-chicken.png" />
+                        <p class="title">Lemon Chicken</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/mixed-vegetables.png" />
+                        <p class="title">Mixed Vegetables</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/lechon-kawali.png" />
+                        <p class="title">Lechon Kawali</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/laing.png" />
+                        <p class="title">Special Laing</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/sweet-spicy-shrimp.png" />
+                        <p class="title">Sweet and Spicy Shrimp</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/yangchow.png" />
+                        <p class="title">Yangchow</p>
+                    </div>
+                </div>
+            </div>
+            <div id="beef" class="tab-pane fade">
+                <div class="menu-content">
+                    <div class="image">
+                        <img src="images/products/beef-salpicao.png" />
+                        <p class="title">Beef Salpicao</p>                  
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/burder-steak.png" />
+                        <p class="title">Burger Steak</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/beef-broccoli.png" />
+                        <p class="title">Beef Broccoli</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/beef-caldereta.png" />
+                        <p class="title">Beef Caldereta</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/roasted-beef-potato.png" />
+                        <p class="title">Roased Beef with Mashed Potato</p>
+                    </div>
+                </div>
+            </div>
+            <div id="pork" class="tab-pane fade">
+                <div class="menu-content">
+                    <div class="image">
+                        <img src="images/products/pork-asado.png" />
+                        <p class="title">Pork Asado</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/pork-steak.png" />
+                        <p class="title">Pork Steak</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/sweet-sour-pork.png" />
+                        <p class="title">Sweet and Sour Pork</p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/lechon-kawali.png" />
+                        <p class="title">Lechon Kawali</p>
+                    </div>
+                </div>
+            </div>
+            <div id="chicken" class="tab-pane fade">
+                <div class="menu-content">
+                    <div class="image">
+                        <img src="images/products/chicken-barbecue.png" />
+                        <p class="title">Chicken Barbecue </p>
+                    </div>
+                    <div class="image">
+                        <img class="image" src="images/products/lemon-chicken.png" />
+                        <p class="title">Lemon Chicken</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <img src="images/logo/logo-center-white.png" />
+            </div>
+            <div class="right-content">
+                <div class="column">
+                    <p class="title">Categories</p>
+                    <div class="subs">Beef</div>
+                    <div class="subs">Pork</div>
+                    <div class="subs">Chicken</div>
+                    <div class="subs">Vegetables</div>
+                </div>
+                <div class="column">
+                    <p class="title">Products</p>
+                    <div class="subs">Special</div>
+                    <div class="subs">Drinks</div>
+                </div>
+                <div class="column">
+                    <p class="title">About</p>
+                    <div class="subs">Contact</div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">Copyright © 2021 EatSoSulit</p>
+    </footer>
+</body>
+
+</html>

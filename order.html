@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eats So Sulit Order Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/navbar-scroll.js"></script>
+    <script type="text/javascript" src="js/arrow-down.js"></script>
+<style>
+#order-container {
+	padding-left: 100px;
+	padding-right: 100px;
+    font-family: Rockwell;
+	font-style: italic;
+	font-weight: normal;
+	color: black;
+}
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default -transparent">
+        <div class="content">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false">
+                    MENU
+                    <span class="arrow-menu" onclick="this.classList.toggle('move')"></span>
+                </button>
+                <a href="index.html">
+                    <img src="images/logo/logo.png" class="logo">
+                </a>
+                <a href="index.html">
+                    <img src="images/logo/logo-white.png" class="show-logo">
+                </a>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" class="link -active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle link -drop" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            Menus
+                            <div class="arrow-down"></div>
+                        </a>
+                        <ul class="dropdown-menu -border-bottom">
+                            <li class="item"><a href="">Beef</a></li>
+                            <li class="item"><a href="">Chicken</a></li>
+                            <li class="item"><a href="">Pork</a></li>
+                            <li class="item"><a href="">Vegetables</a></li>
+                        </ul>
+                    </li>
+					<li><a href="services.html" class="link">Products and Services </a></li>
+                    <li><a href="gallery.html" class="link">Gallery</a></li>    
+                    <li><a href="reviews.html" class="link">Reviews</a></li>
+                    <li><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<br />
+	<br />
+	<br />
+	<br />
+<form action="http://localhost/Project/summary.php" method="POST" autocomplete="on">
+
+
+	   <section class="carousel-products">
+        <div class="row">
+            <div class="row top-content">
+                <div class="col-md-9 title-section">
+                    <h3>Best Sellers</h3>
+                    <p>Bestselling products of the week</p>
+                </div>
+                <div class="col-md-3">
+                    <!-- Controls -->
+                    <div class="controls pull-right hidden-xs">
+                        <a class="glyphicon glyphicon-chevron-left" href="#carousel-example" data-slide="prev"></a>
+                        <a class="glyphicon glyphicon-chevron-right" href="#carousel-example" data-slide="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner products-wrapper">
+                    <div class="item active">
+                        <div class="content">
+                            <div class="product-card col-sm-2">
+                                <div class="col-item">
+                                    <div class="product-photo">
+                                        <img src="images/products/burder-steak.png" class="img-responsive" alt="" />
+                                    </div>
+                                    <div class="product-info">
+                                        <p class="category">Beef</p>
+                                        <h5>Burger Steak</h5>
+                                        QTY: <input type="text" name="burgersteak" size="1">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div class="price-details">
+                                            <!-- put -small in main class if discounted -->
+                                            <p class="main -small">₱830.00</p>
+                                            <p class="discounted">₱747.00</p>
+                                            <p class="percent">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card col-sm-2">
+                                <div class="col-item">        
+                                    <div class="product-photo">
+                                        <img src="images/products/pork-asado.png" class="img-responsive" alt="" />
+                                    </div>
+                                    <div class="product-info">
+                                        <p class="category">Pork</p>
+                                        <h5>Asado</h5>
+                                         QTY: <input type="text" name="asado" size="1">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                        <div class="price-details">
+                                            <!-- put -small in main class if discounted -->
+                                            <p class="main">₱800.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card col-sm-2">
+                                <div class="col-item">
+                                    <div class="product-photo">
+                                        <img src="images/products/beef-salpicao.png" class="img-responsive" alt="" />
+                                    </div>
+                                    <div class="product-info">
+                                        <p class="category">Beef</p>
+                                        <h5>Salpicao</h5>
+                                         QTY: <input type="text" name="salpicao" size="1">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div class="price-details">
+                                            <!-- put -small in main class if discounted -->
+                                            <p class="main">₱650.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card col-sm-2">
+                                <div class="col-item">
+                                    <div class="product-photo">
+                                        <img src="images/products/chicken-barbecue.png" class="img-responsive" alt="" />
+                                    </div>
+                                    <div class="product-info">
+                                        <p class="category">Chicken</p>
+                                        <h5>Chicken Barbecue</h5>
+                                         QTY: <input type="text" name="chickenbbq" size="1">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div class="price-details">
+                                            <!-- put -small in main class if discounted -->
+                                            <p class="main -small">₱780.00</p>
+                                            <p class="discounted">₱624.00</p>
+                                            <p class="percent">20%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card col-sm-2">
+                                <div class="col-item">
+                                    <div class="product-photo">
+                                        <img src="images/products/laing.png" class="img-responsive" alt="" />
+                                    </div>
+                                    <div class="product-info">
+                                        <p class="category">Vegetables</p>
+                                        <h5>Special Laing</h5>
+                                         QTY: <input type="text" name="laing" size="1">
+                                        <div class="star">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <div class="price-details">
+                                            <!-- put -small in main class if discounted -->
+                                            <p class="main -small">₱780.00</p>
+                                            <p class="discounted">₱624.00</p>
+                                            <p class="percent">20%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+           </div>  
+        </section>
+	<br />
+	<hr size=20>
+	<br />
+	<div class="container">
+	<div class="col-md-9 title-section">
+		<h3>Order Form</h3>
+	</div>
+
+
+	<section id="order-container">
+			
+				<fieldset align="right"><legend align="right">Date Today</legend>
+						<h5>Date: </h5><input type="date" name="bday">
+				</fieldset>
+				<fieldset><legend align="center">Identification</legend>
+						<h5>Full Name: </h5> <input type="text" name="name" size="15" maxlength="25">
+						<h5>Contact Number: </h5><input type="text" name="phonenum" size="11" maxlength="13">
+						<h5>Email(optional): </h5><input type="email" name="email" size="20" maxlength="25">
+						
+				</fieldset>
+				<br />
+				<br />
+				<fieldset><legend align="center">Order and Location</legend>
+						<div class="alert alert-warning alert-dismissible fade in">
+							<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+							<strong>Warning!</strong> Please fill up this part and put the quantity of each order.
+						</div>
+						<h5>Complete Address: </h5><input type="text" name="saddress" size="30" maxlength="35">
+						<br />
+						<br />
+						<h5>Special Instructions or Additional Info: </h5>
+						<textarea rows="5" col="20" id="etcetera"> </textarea>
+				<br />
+				<br />
+				</fieldset>
+				<input type="submit" class="btn btn-warning" value="RESET">
+				<input type="submit" class="btn btn-info" value="SUBMIT">
+        </section>
+ 
+    </div>
+    </form>
+	<footer>
+        <div class="footer-container">
+            <div class="left">
+                <img src="images/logo/logo-center-white.png" />
+            </div>
+            <div class="right-content">
+                <div class="column">
+                    <p class="title">Categories</p>
+                    <div class="subs">Beef</div>
+                    <div class="subs">Pork</div>
+                    <div class="subs">Chicken</div>
+                    <div class="subs">Vegetables</div>
+                </div>
+                <div class="column">
+                    <p class="title">Products</p>
+                    <div class="subs">Special</div>
+                    <div class="subs">Drinks</div>
+                </div>
+                <div class="column">
+                    <p class="title">About</p>
+                    <div class="subs">Contact</div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">Copyright © 2021 EatSoSulit</p>
+    </footer>
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	

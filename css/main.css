@@ -1,0 +1,602 @@
+/***********************************************/
+/*    BASE STYLE
+/***********************************************/
+
+* {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+html, body {
+  font-family: 'soleil', sans-serif;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  -webkit-transition: all 0.1s ease 0s;
+  -moz-transition: all 0.1s ease 0s;
+  -o-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: 0;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.5;
+  color: #010101;
+}
+
+p {
+  margin: 0;
+  color: #333333;
+  font-weight: 300;
+}
+
+select {
+  display: block;
+  -moz-appearance: menulist-button;
+  -webkit-appearance: menulist-button;
+  appearance: menulist-button;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline: none;
+  appearance: none;
+}
+
+section {
+  margin: 64px 0;
+}
+
+/* Some of the styles are made to override bootstrap style */
+/* nav */
+.navbar-default {
+  position: fixed;
+  width: 100%;
+  background: #1C1D24;
+  height: 80px;
+  transition: background 0.2s ease-out;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 56px;
+  z-index: 1;
+}
+
+.navbar-default.-transparent {
+  background: rgba(97, 97, 97, 0.38);
+}
+
+/* .navbar-default.-transparent, */
+.navbar-default.-transparent > .content > .navbar-collapse {
+  background: transparent;
+}
+
+.navbar-default.-scroll {
+  background: #1C1D24;
+}
+
+.navbar-default > .content {
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-weight: 500;
+  margin: 6px 24px 0;
+  padding: 0 2px 4px;
+  height: 26px;
+}
+
+.navbar-default .navbar-nav > li > a.-mobile {
+  display: none;
+}
+
+.navbar-header {
+  position: relative;
+}
+
+.navbar-header > a {
+  position: absolute;
+  top: -15px;
+}
+
+.navbar-header > a > img {
+  height: 60px;
+}
+
+.navbar-header > a > .logo,
+.navbar-header > a > .logo-white
+ {
+  margin-top: 4px;
+}
+
+.navbar-header > a > .logo.-remove,
+.navbar-header > a > .show-logo {
+  display: none;
+}
+
+.navbar-header > a > .logo.-white,
+.navbar-header > a > .show-logo.-white {
+  display: block;
+}
+
+.navbar-nav > li > .btn {
+  margin-left: 14px;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #e89f30;
+  border-bottom: 1.5px solid #e89f30;
+}
+
+.navbar-default .navbar-nav > li > a.-active {
+  color: #e89f30;
+  border-bottom: 1.5px solid #e89f30;
+}
+
+.navbar-default .navbar-nav > li > a.-active > .arrow-down:after,
+.navbar-default .navbar-nav > li > a.-active > .arrow-down:before,
+.navbar-default .navbar-nav > .open > a > .arrow-down:after,
+.navbar-default .navbar-nav > .open > a > .arrow-down:before {
+  background: #e89f30;
+}
+
+.navbar-default .navbar-nav > .open > a {
+  color: #e89f30 !important;
+  background: none !important;
+  border-bottom: 1.5px solid #e89f30;
+}
+
+.navbar-collapse {
+  background: #1C1D24;
+  transition: background 0.2s ease-out;
+}
+
+.navbar-nav > li > .link.-tablet {
+  display: none;
+}
+
+/*dropdown-menu*/
+.dropdown-menu {
+  left: 12px !important;
+  top: 30px;
+  box-shadow: none;
+  border: 2px solid #e89f30;
+  background: #1C1D24;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+
+.dropdown-menu > .item > a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dropdown-menu > .item > a:hover {
+  background: #e89f30;
+}
+
+/*add this if you have arrow-down class*/
+.dropdown-toggle.-drop {
+  display: flex;
+  padding-right: 21px !important;
+}
+
+.glyphicon.-small {
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+/*button style*/
+.btn {
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  outline: none !important;
+  padding: 12px 24px;
+  position: relative;
+  transition: 0.3s all;
+}
+
+.btn.-long {
+  padding: 8px 72px;
+}
+
+.btn.-small {
+  padding: 8px 16px;
+}
+
+.btn-orange {
+  color: #fff;
+  background: #FF6600;
+}
+
+.btn-orange:hover {
+  background: #e65c00;
+  color: #fff;
+}
+
+.btn-yellow {
+  background: #FBE52F;
+}
+
+.btn-yellow:hover {
+  background: #FACF00;
+}
+
+.btn-black {
+  color: #fff;
+  background: #010101;
+}
+
+.btn-black:hover {
+  color: #FBE52F;
+}
+
+/* arrow style */
+.arrow-down,
+.arrow-menu {
+  width: 97%;
+  height: 100%;
+  position: absolute;
+  left: 1px;
+  top: 0;
+}
+
+/*safari css only*/
+_::-webkit-full-page-media, _:future, :root .arrow-menu {
+  top: -2px;
+}
+
+.arrow-down:before,
+.arrow-down:after,
+.arrow-menu:before,
+.arrow-menu:after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 11px;
+  transition: transform .5s;
+}
+
+.arrow-down:hover:before,
+.arrow-down:hover:after,
+.arrow-menu:hover:after,
+.arrow-menu:hover:before {
+  background: #e89f30;
+}
+
+.arrow-down:before,
+.arrow-menu:before {
+  right: 6px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform: rotate(45deg);
+}
+
+.arrow-down:after,
+.arrow-menu:after {
+  right: 1px;
+  transform: rotate(-45deg);
+}
+
+.arrow-down.move:before,
+.arrow-menu.move:before {
+  transform: rotate(-45deg);
+}
+
+.arrow-down.move:after,
+.arrow-menu.move:after {
+  transform: rotate(45deg);
+}
+
+/* carousel */
+.banner-inner > .item {
+  height: 95vh;
+}
+
+.banner-inner > .item > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption.-white > h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.carousel-caption.-white > p {
+  color: #cfcfcf;
+}
+
+/* carousel-products */
+
+.carousel-products {
+  margin: 0 32px;
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+}
+
+.title-section {
+  margin-bottom: 16px;
+}
+
+.title-section > p {
+  color:rgb(105, 105, 105)
+}
+
+.product-card {
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  padding: 0
+}
+
+.product-card:hover {
+  border-color:#FF6301;
+  transition: all 300ms linear;
+  cursor: pointer;
+}
+
+.product-card:hover > div > .product-info > h5 {
+  color: #FF6600;
+  transition: all 50ms linear;
+}
+
+.products-wrapper > .item > .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-info {
+  padding: 12px;
+}
+
+.product-info > .category {
+  color: rgb(105, 105, 105);
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.product-info > h5 {
+  margin-bottom: 10px;
+}
+
+.product-info > .star > .checked {
+  color: #FBE52F
+}
+
+.product-photo > img {
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
+  height: 240px;
+  width: 100%;
+}
+
+.price-details {
+  margin-top: 4px;
+}
+
+.price-details {
+  display: flex;
+  font-size: 15px;
+  align-items: baseline;
+}
+
+.price-details > p {
+  margin-right: 8px;
+}
+
+.price-details > .-small {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: rgb(105, 105, 105)
+}
+
+.price-details > .discounted {
+  color: #e9322e;
+}
+
+.price-details > .percent {
+  color: #fff;
+  font-size: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  background: #e9322e;
+  font-weight: 600;
+}
+
+/* faq */
+.faq-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.faq-content {
+  display: flex;
+}
+
+.faq-content > img {
+  margin-right: 16px;
+}
+
+.faq-content > .details > .title {
+  font-weight: 700;
+}
+
+.faq-content > .details > .sub {
+  font-size: 13px;
+}
+
+/* footer */
+footer {
+  background: #1C1D24;
+  padding: 32px 32px 16px;
+  margin-top: 32px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container > .left,
+.footer-container > .right-content {
+  width: 50%;
+}
+
+.footer-container > .left > img {
+  width: 50%;
+}
+
+.right-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.right-content > .column > .title {
+  font-weight: 600;
+  color:rgb(155, 155, 155);
+  margin-bottom: 16px;
+}
+
+.right-content > .column > .subs {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #fff;
+}
+
+/* page banner  */
+.header-container {
+  position: relative;
+}
+
+.header-container > img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.header-container > .title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-container > .title > h1 {
+  color: #e89f30;
+  font-size: 46px;
+}
+
+/* gallery image */
+.page-container {
+  margin: 48px 0 160px 0;
+}
+
+.tab-pane {
+  margin: 32px 0;
+}
+.menu-content {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.menu-content > .image {
+  margin: 5px;
+  position: relative;
+}
+
+.menu-content > .image > img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.menu-content > .image > .title {
+  position: absolute;
+  display: none;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.menu-content > .image:hover > .title {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  justify-content: center;
+  background-color: #01010170;
+  border-radius: 5px;
+}
+
+/* override bootstrap style */
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #FF6600;
+}
+
+.tab-pane {
+  margin: 32px 100px
+}
+
+.nav-pills > li > a {
+  color: #FF6600;
+}
